@@ -4,6 +4,7 @@
  */
 package pos.mvc;
 
+
 import pos.mvc.view.CustomerView;
 
 /**
