@@ -38,7 +38,7 @@
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Component id="jPanel2" max="32767" attributes="0"/>
+              <Component id="jPanel2" alignment="0" max="32767" attributes="0"/>
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="tablePanel" max="32767" attributes="0"/>
@@ -61,7 +61,7 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="headerPanel" max="32767" attributes="0"/>
+                  <Component id="headerPanel" alignment="0" max="32767" attributes="0"/>
                   <Component id="fromPanel" alignment="0" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
@@ -83,7 +83,8 @@
                   <Font name="Segoe UI" size="18" style="1"/>
                 </Property>
                 <Property name="horizontalAlignment" type="int" value="0"/>
-                <Property name="text" type="java.lang.String" value="Manage Customer"/>
+                <Property name="text" type="java.lang.String" value="Manage Item"/>
+                <Property name="toolTipText" type="java.lang.String" value=""/>
               </Properties>
             </Component>
             <Container class="javax.swing.JPanel" name="fromPanel">
@@ -91,44 +92,9 @@
               <Layout>
                 <DimensionLayout dim="0">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" alignment="0" attributes="0">
-                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                              <Group type="102" attributes="0">
-                                  <Component id="custidLabel" min="-2" pref="97" max="-2" attributes="0"/>
-                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                  <Component id="custidText" min="-2" pref="133" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="1" attributes="0">
-                                  <Component id="custTitalLabel" max="32767" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="custTitleText" min="-2" pref="133" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Component id="custDOBLabel" min="-2" pref="103" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="custDOBText" max="32767" attributes="0"/>
-                              </Group>
-                          </Group>
-                          <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                              <Component id="custNameLabel" pref="95" max="32767" attributes="0"/>
-                              <Component id="custSalaryLabel" max="32767" attributes="0"/>
-                          </Group>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" attributes="0">
-                                  <Component id="custNameText" pref="285" max="32767" attributes="0"/>
-                                  <EmptySpace min="-2" pref="194" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" attributes="0">
-                                  <Component id="custSalaryText" min="-2" pref="151" max="-2" attributes="0"/>
-                                  <EmptySpace max="32767" attributes="0"/>
-                              </Group>
-                          </Group>
-                      </Group>
                       <Group type="102" alignment="1" attributes="0">
                           <Group type="103" groupAlignment="1" attributes="0">
-                              <Group type="102" attributes="0">
+                              <Group type="102" alignment="1" attributes="0">
                                   <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                                   <Component id="deleteButton" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
@@ -138,20 +104,15 @@
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="custAddressLabel" min="-2" pref="103" max="-2" attributes="0"/>
-                                      <Component id="custCityLabel" alignment="0" min="-2" pref="97" max="-2" attributes="0"/>
+                                      <Component id="unitPriceLabel" alignment="0" min="-2" pref="103" max="-2" attributes="0"/>
+                                      <Component id="qohLabel" alignment="0" min="-2" pref="97" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="custAddressText" max="32767" attributes="0"/>
-                                      <Group type="102" attributes="0">
-                                          <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="custZipText" alignment="0" min="-2" pref="133" max="-2" attributes="0"/>
-                                              <Component id="custCityText" alignment="0" min="-2" pref="133" max="-2" attributes="0"/>
-                                          </Group>
-                                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                                      </Group>
+                                      <Component id="qohText" alignment="0" min="-2" pref="133" max="-2" attributes="0"/>
+                                      <Component id="unitPriceText" min="-2" pref="170" max="-2" attributes="0"/>
                                   </Group>
+                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                           <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
@@ -159,12 +120,20 @@
                       <Group type="102" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="-2" pref="277" max="-2" attributes="0"/>
-                                  <Component id="custProvinceLabel" min="-2" pref="85" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="custProvinceText" min="-2" pref="133" max="-2" attributes="0"/>
+                                  <Component id="ItemCodeLabel" min="-2" pref="97" max="-2" attributes="0"/>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Component id="ItemCodeText" min="-2" pref="133" max="-2" attributes="0"/>
                               </Group>
-                              <Component id="custZipLabel" alignment="0" min="-2" pref="101" max="-2" attributes="0"/>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="packSizeLabel" min="-2" pref="103" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="packSizeText" min="-2" pref="255" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="descriptionLabel" min="-2" pref="103" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="DescriptionText" min="-2" pref="255" max="-2" attributes="0"/>
+                              </Group>
                           </Group>
                           <EmptySpace max="32767" attributes="0"/>
                       </Group>
@@ -175,41 +144,30 @@
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="custidLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="custidText" alignment="3" min="-2" pref="16" max="-2" attributes="0"/>
+                              <Component id="ItemCodeLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="ItemCodeText" alignment="3" min="-2" pref="16" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="custTitalLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="custTitleText" alignment="3" min="-2" pref="16" max="-2" attributes="0"/>
-                              <Component id="custNameLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="custNameText" alignment="3" min="-2" pref="16" max="-2" attributes="0"/>
+                              <Component id="descriptionLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="DescriptionText" alignment="3" min="-2" pref="16" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="custDOBLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="custDOBText" alignment="3" min="-2" pref="16" max="-2" attributes="0"/>
-                              <Component id="custSalaryLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="custSalaryText" alignment="3" min="-2" pref="16" max="-2" attributes="0"/>
+                              <Component id="packSizeLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="packSizeText" alignment="3" min="-2" pref="16" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="custAddressLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="custAddressText" alignment="3" min="-2" pref="16" max="-2" attributes="0"/>
+                              <Component id="unitPriceLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="unitPriceText" alignment="3" min="-2" pref="16" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="custCityLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="custCityText" alignment="3" min="-2" pref="16" max="-2" attributes="0"/>
-                              <Component id="custProvinceLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="custProvinceText" alignment="3" pref="0" max="32767" attributes="0"/>
+                              <Component id="qohLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="qohText" alignment="3" min="-2" pref="16" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="custZipLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="custZipText" alignment="3" min="-2" pref="16" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace pref="27" max="32767" attributes="0"/>
+                          <EmptySpace pref="49" max="32767" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="updateButton" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="deleteButton" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -221,68 +179,47 @@
                 </DimensionLayout>
               </Layout>
               <SubComponents>
-                <Component class="javax.swing.JLabel" name="custidLabel">
+                <Component class="javax.swing.JLabel" name="ItemCodeLabel">
                   <Properties>
-                    <Property name="text" type="java.lang.String" value="Customer id"/>
+                    <Property name="text" type="java.lang.String" value="Item Code"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JTextField" name="custidText">
+                <Component class="javax.swing.JTextField" name="ItemCodeText">
                 </Component>
-                <Component class="javax.swing.JLabel" name="custTitalLabel">
+                <Component class="javax.swing.JLabel" name="descriptionLabel">
                   <Properties>
-                    <Property name="text" type="java.lang.String" value="Customer Title"/>
+                    <Property name="text" type="java.lang.String" value="Description"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JTextField" name="custTitleText">
+                <Component class="javax.swing.JTextField" name="DescriptionText">
                 </Component>
-                <Component class="javax.swing.JLabel" name="custNameLabel">
+                <Component class="javax.swing.JLabel" name="packSizeLabel">
                   <Properties>
-                    <Property name="text" type="java.lang.String" value="Customer Name"/>
+                    <Property name="text" type="java.lang.String" value="Pack Size"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JTextField" name="custNameText">
+                <Component class="javax.swing.JTextField" name="packSizeText">
                 </Component>
-                <Component class="javax.swing.JLabel" name="custDOBLabel">
+                <Component class="javax.swing.JLabel" name="unitPriceLabel">
                   <Properties>
-                    <Property name="text" type="java.lang.String" value="Customer DOB"/>
+                    <Property name="text" type="java.lang.String" value="Unit Price"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JTextField" name="custDOBText">
+                <Component class="javax.swing.JTextField" name="unitPriceText">
                 </Component>
-                <Component class="javax.swing.JLabel" name="custAddressLabel">
+                <Component class="javax.swing.JLabel" name="qohLabel">
                   <Properties>
-                    <Property name="text" type="java.lang.String" value="Address"/>
+                    <Property name="text" type="java.lang.String" value="QoH"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JTextField" name="custAddressText">
-                </Component>
-                <Component class="javax.swing.JLabel" name="custCityLabel">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="City"/>
-                  </Properties>
-                </Component>
-                <Component class="javax.swing.JTextField" name="custCityText">
-                </Component>
-                <Component class="javax.swing.JLabel" name="custProvinceLabel">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="Province"/>
-                  </Properties>
-                </Component>
-                <Component class="javax.swing.JTextField" name="custProvinceText">
-                </Component>
-                <Component class="javax.swing.JLabel" name="custZipLabel">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="Postal Code"/>
-                  </Properties>
-                </Component>
-                <Component class="javax.swing.JTextField" name="custZipText">
+                <Component class="javax.swing.JTextField" name="qohText">
                 </Component>
                 <Component class="javax.swing.JButton" name="updateButton">
                   <Properties>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Segoe UI" size="14" style="1"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="Update Customer"/>
+                    <Property name="text" type="java.lang.String" value="Update Item"/>
                   </Properties>
                   <Events>
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="updateButtonActionPerformed"/>
@@ -293,7 +230,7 @@
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Segoe UI" size="14" style="1"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="Save Customer"/>
+                    <Property name="text" type="java.lang.String" value="Save Item"/>
                   </Properties>
                   <Events>
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="addButton1ActionPerformed"/>
@@ -304,18 +241,11 @@
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Segoe UI" size="14" style="1"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="Delete Customer"/>
+                    <Property name="text" type="java.lang.String" value="Delete Item"/>
                   </Properties>
                   <Events>
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="deleteButtonActionPerformed"/>
                   </Events>
-                </Component>
-                <Component class="javax.swing.JLabel" name="custSalaryLabel">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="Salary"/>
-                  </Properties>
-                </Component>
-                <Component class="javax.swing.JTextField" name="custSalaryText">
                 </Component>
               </SubComponents>
             </Container>
@@ -327,7 +257,7 @@
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
-                      <Component id="jScrollPane1" max="32767" attributes="0"/>
+                      <Component id="jScrollPane1" pref="854" max="32767" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -335,7 +265,7 @@
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <Component id="jScrollPane1" pref="216" max="32767" attributes="0"/>
+                      <Component id="jScrollPane1" pref="196" max="32767" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -349,7 +279,7 @@
 
               <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
               <SubComponents>
-                <Component class="javax.swing.JTable" name="CustomerTable">
+                <Component class="javax.swing.JTable" name="ItemTable">
                   <Properties>
                     <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
                       <Table columnCount="4" rowCount="4">
@@ -361,7 +291,7 @@
                     </Property>
                   </Properties>
                   <Events>
-                    <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="CustomerTableMouseClicked"/>
+                    <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="ItemTableMouseClicked"/>
                   </Events>
                 </Component>
               </SubComponents>
