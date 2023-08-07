@@ -255,7 +255,7 @@ public class itemView extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void updateButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_updateButtonActionPerformed
-
+       updateItem();
     }//GEN-LAST:event_updateButtonActionPerformed
 
     private void addButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addButton1ActionPerformed
@@ -263,7 +263,7 @@ public class itemView extends javax.swing.JFrame {
     }//GEN-LAST:event_addButton1ActionPerformed
 
     private void deleteButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deleteButtonActionPerformed
-
+      deleteItem();
     }//GEN-LAST:event_deleteButtonActionPerformed
 
     private void ItemTableMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ItemTableMouseClicked
@@ -313,7 +313,7 @@ public void loadAllItem() {
                 dtm.addRow(row);
             }
         } catch (SQLException ex) {
-           // Logger.getLogger(itemView.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(itemView.class.getName()).log(Level.SEVERE, null, ex);
             JOptionPane.showInputDialog(this, ex.getMessage());
         }
     }
@@ -364,4 +364,38 @@ public void loadAllItem() {
         }
 
 }
+    
+    private void updateItem(){
+        try {
+            ItemModel itemModel = new ItemModel(ItemCodeText.getText(),
+                    DescriptionText.getText(),
+                    packSizeText.getText(),
+                    Double.parseDouble(unitPriceText.getText()),
+                    Integer.parseInt(qohText.getText()));
+            String resp = itemController.updateItem(itemModel);
+            JOptionPane.showInputDialog(this, resp);
+            clear();
+            loadAllItem();
+        } catch (SQLException ex) {
+            Logger.getLogger(itemView.class.getName()).log(Level.SEVERE, null, ex);
+             JOptionPane.showInputDialog(this, ex.getMessage());
+            
+        }
+         
+        
+    }
+
+    private void deleteItem() {
+        try {
+            String itemCode = ItemCodeText.getText();
+            String resp = itemController.deleteItem(itemCode);
+            JOptionPane.showInputDialog(this, resp);
+            clear();
+            loadAllItem();
+        } catch (SQLException ex) {
+            Logger.getLogger(itemView.class.getName()).log(Level.SEVERE, null, ex);
+             JOptionPane.showInputDialog(this, ex.getMessage());
+        }
+    }
 }
+
