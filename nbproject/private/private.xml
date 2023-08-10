@@ -4,10 +4,16 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/E:/projects/MVC/pos-mvc/src/pos/mvc/model/CustomerModel.java</file>
+            <file>file:/E:/projects/MVC/pos-mvc/src/pos/mvc/model/OrderModel.java</file>
+            <file>file:/E:/projects/MVC/pos-mvc/src/pos/mvc/model/ItemModel.java</file>
+            <file>file:/E:/projects/MVC/pos-mvc/src/pos/mvc/controller/OrderController.java</file>
             <file>file:/E:/projects/MVC/pos-mvc/src/pos/mvc/view/CustomerView.java</file>
+            <file>file:/E:/projects/MVC/pos-mvc/src/pos/mvc/view/OrderView.java</file>
             <file>file:/E:/projects/MVC/pos-mvc/src/pos/mvc/PosMvc.java</file>
+            <file>file:/E:/projects/MVC/pos-mvc/src/pos/mvc/model/OrderDetailModel.java</file>
             <file>file:/E:/projects/MVC/pos-mvc/src/pos/mvc/controller/CustomerController.java</file>
-            <file>file:/E:/projects/MVC/pos-mvc/src/pos/mvc/db/DBConnection.java</file>
+            <file>file:/E:/projects/MVC/pos-mvc/src/pos/mvc/controller/ItemController.java</file>
+            <file>file:/E:/projects/MVC/pos-mvc/src/pos/mvc/view/itemView.java</file>
         </group>
     </open-files>
 </project-private>
